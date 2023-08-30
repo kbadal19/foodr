@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function carousel() {
+export default function Carousel() {
   return (
     <div>
       <div
@@ -9,7 +9,7 @@ export default function carousel() {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          <div className="carousel-caption" style={{"zIndex":"10"}}>
+          <div className="carousel-caption" style={{ zIndex: "10" }}>
             <form className="d-flex">
               <input
                 className="form-control me-2"
@@ -17,32 +17,32 @@ export default function carousel() {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-outline-success text-white bg-success" type="submit">
                 Search
               </button>
             </form>
           </div>
           <div className="carousel-item active">
             <img
-              src="https://source.unsplash.com/random/300×300/?burger"
+              src="https://source.unsplash.com/random/900x700/?burger"
               className="d-block w-100"
-              style={{filter: "brightness(30%)"}}
+              style={{ filter: "brightness(30%)", maxHeight: "600px" }}
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
-              src="https://source.unsplash.com/random/300×300/?pizza"
+              src="https://source.unsplash.com/random/900x700/?pizza"
               className="d-block w-100"
-              style={{filter: "brightness(30%)"}}
+              style={{ filter: "brightness(30%)", maxHeight: "600px" }}
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
-              src="https://source.unsplash.com/random/300×300/?dumplings"
+              src="https://source.unsplash.com/random/900x700/?dumplings"
               className="d-block w-100"
-              style={{filter: "brightness(30%)"}}
+              style={{ filter: "brightness(30%)", maxHeight: "600px" }}
               alt="..."
             />
           </div>
@@ -53,10 +53,7 @@ export default function carousel() {
           data-bs-target="#carouselExampleFade"
           data-bs-slide="prev"
         >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
@@ -65,10 +62,7 @@ export default function carousel() {
           data-bs-target="#carouselExampleFade"
           data-bs-slide="next"
         >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>
